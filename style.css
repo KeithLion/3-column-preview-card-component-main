@@ -19,7 +19,7 @@ body{
     background-color: var(--Transparent);
 }
 
-main{
+.container{
     display: flex;
     max-width: 55rem;
 }
@@ -30,7 +30,7 @@ p{
     margin: 3rem 0 7rem;
     line-height: 1.6em;
 }
-header{
+h2{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     color: var(--VeryLightGray);
@@ -38,21 +38,23 @@ header{
     margin-top: 1em;
 }
 
-button{
+a{
     background-color: var(--VeryLightGray);
     padding: 1em 2em 1em 2em;
     border-radius: 3rem;
     border: 0;
     font-family: 'Lexend Deca', sans-serif;
-    cursor:pointer;
+text-decoration: none;
 }
-.sedan button{
+
+
+.sedan a{
     color: var(--BrightOrange);
 }
-.suv button{
+.suv a{
     color: var(--DarkCyan);
 }
-.luxury button{
+.luxury a{
     color: var(--VeryDarkCyan);
 }
 .sedan{
@@ -74,7 +76,7 @@ button{
 }
 
 @media screen and (max-width: 600px) {
-    main{
+    .container{
         display: flex;
         flex-direction: column;
         max-width: 20rem;
